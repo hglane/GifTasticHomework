@@ -1,10 +1,11 @@
 $(document).ready(function() {
+    
     createBtn();
      })
-   
+
      function createBtn() {
       var topics = [
-       "Antlanta Braves",
+       "Atlanta Braves",
        "St. Louis Cardinals",
        "Boston Red Sox",
        "Chicago Cubs",
@@ -41,7 +42,7 @@ $(document).ready(function() {
              var img = $("<img>");
              var imgUrl = result[i].images.original.url;
              img.attr("src", imgUrl);
-             $("#gifs").append(img);
+             $("#gifs").prepend(img);
            }
          }
        });
